@@ -112,3 +112,9 @@ config IMX_USBPHY
     bool
     default y
     depends on USB
+
+config USB_KMOD_EDU
+    bool
+    default y if TEST_DEVICES
+    depends on USB
+
