@@ -94,7 +94,7 @@ static const USBDesc desc_kmod_edu = {
     .str  = desc_strings,
 };
 
-static void usb_kmod_edu_unrealize(USBDevice *dev, Error **errp)
+static void usb_kmod_edu_unrealize(USBDevice *dev)
 {
 	USBKmodEduState *us = USB_KMOD_EDU(dev);
 	us->interval = 500;
